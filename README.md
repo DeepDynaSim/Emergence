@@ -1,5 +1,24 @@
-# Emergence
-Understanging How Large-Scale Order Emerges
+# Emergence: An Agent-Based MATLAB Simulation
+
+**DeepDynaSim collection | Complex systems | Educational scientific computing**
+
+Explore a small agent-based model in which agents move on a resource grid, accumulate energy and deplete local resources. Random resource-loss events make the spatial patterns evolve over time.
+
+## Run the example
+
+Open [simpleemergence.m](simpleemergence.m) in MATLAB from the cloned repository root. Review `grid_size`, `num_agents` and `num_steps`, then run the script. It animates the grid and agent locations and produces a final agent-energy plot.
+
+```matlab
+% Set a seed if you want repeatable random draws in your own experiment.
+rng(42);
+simpleemergence
+```
+
+## Scope
+
+The implemented model is a resource-consumption demonstration. The background notes below introduce broader ideas in emergence, causal states and computational mechanics; they do not imply that an epsilon-machine inference or formal emergence metric is implemented in the script. Record the random seed and parameter values when comparing runs.
+
+## Detailed notes
 
 ε-Machines and the Formalization of Emergent Behavior
 Hierarchical Models and the Concept of ε-Machine
@@ -50,7 +69,7 @@ https://arxiv.org/abs/2202.01854
 
 Code Explanation
 
-simpleemergence.m
+### `simpleemergence.m`
 
 This MATLAB script simulates the movement and energy consumption of agents on a grid over a series of steps. The simulation involves the following steps:
 
@@ -89,14 +108,10 @@ b. Implement a logging mechanism to track agent positions and energy levels at e
 
 https://github.com/DeepDynaSim/Emergence/assets/35817872/89d74731-b81e-49f4-ab9f-48bfd92c0486
 
+## Related work and collaboration
 
+Explore related repositories: [Pilot Wave Dynamics](https://github.com/DeepDynaSim/Pilot-Wave-Dynamics) · [Complete Kinematic Analysis](https://github.com/DeepDynaSim/Complete-Kinematic-Analysis).
 
+[DeepDynaSim](https://github.com/DeepDynaSim) is an engineering R&D and consulting company in İzmir, Türkiye, focused on physics-guided AI, simulation and control. For engineering collaboration: [support@deepdynasim.com](mailto:support@deepdynasim.com). For repository questions, use [Issues](https://github.com/DeepDynaSim/Emergence/issues).
 
-
-
-
-
-
-
-
-
+Reuse follows the existing [LICENSE](LICENSE); academic authorship and third-party attribution remain with their respective creators.
