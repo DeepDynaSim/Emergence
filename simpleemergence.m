@@ -30,7 +30,7 @@ end
 % Analyze and visualize results
 figure;
 plot(agent_energy);
-title('Agent Energy Levels Over Time');
+title('Final Agent Energy by Agent Index');
 xlabel('Agent Index');
 ylabel('Energy');
 
